@@ -21,7 +21,7 @@ License: MIT
         'WITH', 'WITNESS'
       ],
       literal: [
-        'FALSE', 'TRUE', 'BOOLEAN', 'Int', 'Nat', 'Real', 'Seq',
+        'FALSE', 'TRUE', 'BOOLEAN', 'STRING', 'Int', 'Nat', 'Real', 'Seq',
       ],
       punctuation: [ ',', '(', ')', '{', '}', '[', ']', ']_', '>>_' ],
     };
