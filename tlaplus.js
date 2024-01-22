@@ -4,7 +4,8 @@ Requires:
 Author: Igor Konnov [konnov.github.io], 2024
 Contributors:
 Description: Syntax highlighting for TLA+
-Website: https://lamport.azurewebsites.net/tla/tla.html
+Website: https://github.com/konnov/tlaplus-highlightjs
+License: MIT
 */
 (() => {
   function tlaHljs(hljs) {
@@ -35,8 +36,8 @@ Website: https://lamport.azurewebsites.net/tla/tla.html
           begin: '"',
           end: '"'
         },
-        hljs.COMMENT('\\\\\\*', '$'),      // single line comments
-        hljs.COMMENT('\\(\\*', '\\*\\)'),  // multiline comments
+        hljs.COMMENT('\\\\\\*', '$'),
+        hljs.COMMENT('\\(\\*', '\\*\\)'),
         {
           className: 'symbol',
           begin: /\\[A-Za-z]+|\\|\/|WF_|SF_|'|\|->|\[\]|\(\+\)|\(-\)|\(\\X\)|\(\/\)|\(\.\)|&|\||@@|##|\$|\?|\!|~|~>|<=>|=>|>=|<=|>>|<<|<:|>|<|:=|==|=|\/=|#=|\.|\*|\+|-|\/|%|::=|:|:>|\^\^|\^\+|\^\*|\^\#|\^/,
