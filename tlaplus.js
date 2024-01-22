@@ -31,11 +31,8 @@ License: MIT
       case_insensitive: false,
       keywords: n,
       contains: [
-        {
-          scope: 'string',
-          begin: '"',
-          end: '"'
-        },
+        hljs.QUOTE_STRING_MODE,
+        hljs.C_NUMBER_MODE,
         hljs.COMMENT('\\\\\\*', '$'),
         hljs.COMMENT('\\(\\*', '\\*\\)'),
         {
