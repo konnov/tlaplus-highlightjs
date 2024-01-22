@@ -1,0 +1,22 @@
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+name: minify-check
+
+jobs:
+  # make sure that the minified file is up-to-date
+  minified-ok:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+      - run: npm install -g minify
+      - run: minify tlaplus.js >m.js
+      - run: diff tlaplus-minified.js m.js || echo "the minified file is outdated"
