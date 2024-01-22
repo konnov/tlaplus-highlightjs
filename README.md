@@ -1,5 +1,7 @@
 # Syntax highlighting for TLA<sup>+</sup> in [highlightjs][]
 
+![badge](https://github.com/konnov/tlaplus-highlightjs/actions/workflows/ci.yml/badge.svg)
+
 This repository contains a syntax highlighting file for TLA<sup>+</sup> with
 [highlightjs][]. You can use it to highlight TLA<sup>+</sup> snippets in your
 blog posts. You can check how it looks like in my blog called
